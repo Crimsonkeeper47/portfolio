@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        tr:nth-child(even) {
+            background-color: lightcyan;
+        }
+        tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+<nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="table.html">Table</a>
+    <a href="selector.html">Selector</a>
+    <a href="images.html">Images</a>
+    <a href="webpage1.html">Webpage 1</a>
+    <a href="CSS Selectors.html">CSS Selectors</a>
+    <a href="HTML5.html">HTML5</a>
+</nav>
+<table border="1">
+    <tr>
+        <th>Selector</th>
+        <th>Example</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Class Selector</td>
+        <td>.classname</td>
+        <td>Selects elements with a specific class name.</td>
+    </tr>
+    <tr>
+        <td>Multi-class Selector</td>
+        <td>.example1.name4</td>
+        <td>Selects all elements with both example1 and name4 set within its class attribute</td>
+    </tr>
+    <tr>
+        <td>Descendant-Class Selector</td>
+        <td>.example3 .class5</td>
+        <td>Selects all elements with class5 within the ancestor selector example3.</td>
+    </tr>
+    <tr>
+        <td>ID Selector</td>
+        <td>#idname</td>
+        <td>Selects the element with the id name.</td>
+    </tr>
+    <tr>
+        <td>Askrisk(*)</td>
+        <td>*</td>
+        <td>Selects all elements.</td>
+    </tr>
+    <tr>
+        <td>Element Selector</td>
+        <td>p</td>
+        <td>Selects all p elements.</td>
+    </tr>
+    <tr>
+        <td>Element-Class Selector</td>
+        <td>p.classname</td>
+        <td>Selects all p elements with classname.</td>
+    </tr>
+    <tr>
+        <td>Element-div Selector</td>
+        <td>div,h1</td>
+        <td>Selects all div elements and all h1 elements.</td>
+    </tr>
+    <tr>
+        <td>Element-Internal (Descendant) Selector</td>
+        <td>div h1</td>
+        <td>Selects all div elements inside h1 elements.</td>
+    </tr>
+    <tr>
+        <td>Element-External (Ancestor) Selector</td>
+        <td>div > h1</td>
+        <td>Selects all h1 elements inside div elements.</td>
+    </tr>
+    <tr>
+        <td>Direct Element Selector</td>
+        <td>div + h1</td>
+        <td>Selects the first h1 element that is placed immediately after div elements.</td>
+    </tr>
+    <tr>
+        <td>Adjacent Element Selector</td>
+        <td>p ~ h1</td>
+        <td>Selects every p element that is proceeded by a h1 element.</td>
+    </tr>
+    <tr>
+        <td>Attribute Selector</td>
+        <td>[attribute]</td>
+        <td>Selects the target attribute.</td>
+    </tr>
+    <tr>
+        <td>Attribute-Value Selector</td>
+        <td>[attribute=value]</td>
+        <td>Selects all elements with the target attribute set to the target value. (e.x target="_blank")</td>
+    </tr>
+    <tr>
+        <td>Attribute-Title Selector</td>
+        <td>title~="_brick"</td>
+        <td>Selects all elements with the title attribute containing the word brick.</td>
+    </tr>
+    <tr>
+        <td>Attribute-Language Selector</td>
+        <td>lang|="en"</td>
+        <td>Selects all elements with the lang attribute set to en or starting with "en-"</td>
+    </tr>
+    <tr>
+        <td>Attribute-Webpage Selector</td>
+        <td>[href^="https"]</td>
+        <td>Selects all (a) elements with the href attribute that starts with https.</td>
+    </tr>
+    <tr>
+        <td>Attribute-Image Selector</td>
+        <td>a[href$=".pdf"]</td>
+        <td>Selects all (a) elements with the href attribute that ends with .pdf.</td>
+    </tr>
+    <tr>
+        <td>Attribute-Website Selector</td>
+        <td>a[href*="w3schools"]</td>
+        <td>Selects all (a) elements with the href attribute that contains the substring "w3schools".</td>
+    </tr>
+    <tr>
+        <td>Active Web Link Selector</td>
+        <td>a:active</td>
+        <td>Selects the active link.</td>
+    </tr>
+    <tr>
+        <td>After-Element Selector</td>
+        <td>p:after</td>
+        <td>Inputs something after the content of each p element.</td>
+    </tr>
+    <tr>
+        <td>Before-Element Selector</td>
+        <td>h1:before</td>
+        <td>Inputs something before the content of each h1 element.</td>
+    </tr>
+    <tr>
+        <td>Checked Element Selector</td>
+        <td>input:checked</td>
+        <td>Selects all checked input elements.</td>
+    </tr>
+    <tr>
+        <td>Default-Element Selector</td>
+        <td>input:default</td>
+        <td>Selects the default input elements.</td>
+    </tr>
+    <tr>
+        <td>Disabled Element Selector</td>
+        <td>input:disabled</td>
+        <td>Selects all disabled input elements.</td>
+    </tr>
+    <tr>
+        <td>Empty Element Selector</td>
+        <td>input:empty</td>
+        <td>Selects every input element that has no children (including text nodes).</td>
+    </tr>
+    <tr>
+        <td>Enabled Element Selector</td>
+        <td>input:enabled</td>
+        <td>Selects all enabled input elements.</td>
+    </tr>
+    <tr>
+        <td>First-Child Element Selector</td>
+        <td>p:first-child</td>
+        <td>Selects every first child of the p element.</td>
+    </tr>
+    <tr>
+        <td>First-Letter Element Selector</td>
+        <td>p:first-letter</td>
+        <td>Selects the first letter of every p element.</td>
+    </tr>
+    <tr>
+        <td>First-Line Element Selector</td>
+        <td>p:first-line</td>
+        <td>Selects the first line of every p element.</td>
+    </tr>
+    <tr>
+        <td>First-of-Type Selector</td>
+        <td>p:first-of-type</td>
+        <td>Selects every p element that is the first p element of its parent.</td>
+    </tr>
+    <tr>
+        <td>Focus-Element Selector</td>
+        <td>input:focus</td>
+        <td>Selects the input element that has focus.</td>
+    </tr>
+    <tr>
+        <td>Full-Screen Selector</td>
+        <td>html:fullscreen</td>
+        <td>Selects the html element that is in full screen.</td>
+    </tr>
+    <tr>
+        <td>Hover Selector</td>
+        <td>a:hover</td>
+        <td>Selects the a element when the mouse is hovering over it.</td>
+    </tr>
+    <tr>
+        <td>Range Selector</td>
+        <td>input:in-range</td>
+        <td>Selects the input element that is within the specified range.</td>
+    </tr>
+    <tr>
+        <td>Indetermediate-Element Selector</td>
+        <td>input:interdemediate</td>
+        <td>Selects input element that are in a indetermediate state.</td>
+    </tr>
+    <tr>
+        <td>Invalid Element Selector</td>
+        <td>input:invalid</td>
+        <td>Selects the input element that has a invalid value.</td>
+    </tr>
+    <tr>
+        <td>Language/Font-Element Selector</td>
+        <td>p:lang(it)</td>
+        <td>Selects every p element with a lang attribute to it (Italian).</td>
+    </tr>
+    <tr>
+        <td>Last-Child Element Selector</td>
+        <td>p:last-child</td>
+        <td>Selects every last child of the p element.</td>
+    </tr>
+    <tr>
+        <td>Last-of-Type Selector</td>
+        <td>p:last-of-type</td>
+        <td>Selects every p element that is the last p element of its parent.</td>
+    </tr>
+    <tr>
+        <td>Link Element Selector</td>
+        <td>a:link</td>
+        <td>Selects the a element that has not been visited.</td>
+    </tr>
+    <tr>
+        <td>Marker Selector</td>
+        <td>:marker</td>
+        <td>Selects the markers of list items.</td>
+    </tr>
+    <tr>
+        <td>Not Element Selector</td>
+        <td>input:not</td>
+        <td>Selects every element that is not an input element.</td>
+    </tr>
+    <tr>
+        <td>Nth-Child Selector</td>
+        <td>p:nth-child(2n)</td>
+        <td>Selects every p element that is the second child of its parent..</td>
+    </tr>
+    <tr>
+        <td>Nth-Last-Child Selector</td>
+        <td>p:nth-last-child(2n)</td>
+        <td>Selects every p element that is the second child of its parent, counting from the last child.</td>
+    </tr>
+    <tr>
+        <td>Nth-Last-Of-Type Selector</td>
+        <td>p:nth-last-of-type(2n)</td>
+        <td>Selects every p element that is an even number, counting from the last of type.</td
+    </tr>
+    <tr>
+        <td>Nth-Of-Type Selector</td>
+        <td>p:nth-of-type(2n)</td>
+        <td>Selects every p element that is the second p element to the parent.</td>
+    </tr>
+    <tr>
+        <td>Only-of-Type Selectors</td>
+        <td>p:only-of-type</td>
+        <td>Selects every p element that is the only p element of its parent.</td>
+    </tr>
+    <tr>
+        <td>Only-Child Selector</td>
+        <td>p:only-child</td>
+        <td>Selects every p element that is the only child of its parent.</td>
+    </tr>
+    <tr>
+        <td>Optional Element Selector</td>
+        <td>input:optional</td>
+        <td>Selects the input element that has an optional value (No specified or required attribute).</td>
+    </tr>
+    <tr>
+        <td>Outside-Range Element Selector</td>
+        <td>input:out-of-range</td>
+        <td>Selects the input element that is outside the specified range.</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>Placeholder Element Selector</td>
+        <td>input:placeholder-shown</td>
+        <td>Selects the input element that has a placeholder attribute.</td>
+    </tr>
+    <tr>
+        <td>Read-Only Element Selector</td>
+        <td>input:read-only</td>
+        <td>Selects the input element that has a read-only attribute specifed.</td>
+    </tr>
+    <tr>
+        <td>Read-Write Element Selector</td>
+        <td>input:read-write</td>
+        <td>Selects the input element that has a read-write attribute NOT specified.</td>
+    </tr>
+    <tr>
+        <td>Required Element Selector</td>
+        <td>input:required</td>
+        <td>Selects the input element that has a required attribute specified.</td>
+    </tr>
+    <tr>
+        <td>Root Element Selector</td>
+        <td>:root</td>
+        <td>Selects the root element of the document.</td>
+    </tr>
+    <tr>
+        <td>Element Selection</td>
+        <td>::selection</td>
+        <td>Selects the element that is selected by the user.</td>
+    </tr>
+    <tr>
+        <td>Target-Element Selector</td>
+        <td>#news:target</td>
+        <td>Selecs the current #news element (clicked on a URL containing that anchor name).</td>
+    </tr>
+    <tr>
+        <td>Vaild-Element Selector</td>
+        <td>input:valid</td>
+        <td>Selects the input element that has a valid value.</td>
+    </tr>
+    <tr>
+        <td>Visited-Site Element Selector</td>
+        <td>a:visited</td>
+        <td>Selects the a element that has been visited.</td>
+    </tr>
+</table>
+</body>
+</html>

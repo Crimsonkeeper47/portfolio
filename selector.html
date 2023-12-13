@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Selectors practice</title>
+    <style>
+        p,
+        ul {
+            background-color: red;
+        }
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="table.html">Table</a>
+    <a href="selector.html">Selector</a>
+    <a href="images.html">Images</a>
+    <a href="webpage1.html">Webpage 1</a>
+    <a href="CSS Selectors.html">CSS Selectors</a>
+    <a href="HTML5.html">HTML5</a>
+</nav>
+<p> Paragraph 1</p>
+
+<h2>Child selectors</h2>
+
+<h2>Sibling selectors</h2>
+
+<h3>Lists</h3>
+<ul>Unordered List
+    <li>UL Item 1</li>
+    <li>UL Item 2</li>
+    <li>UL Item 3</li>
+    <li>UL Item 4</li>
+    <li>UL Item 5</li>
+</ul>
+<ol>Ordered List
+    <li>UL Item 1</li>
+    <li>UL Item 2</li>
+    <li>UL Item 3</li>
+    <li>UL Item 4</li>
+    <li>UL Item 5</li>
+</ol>
+<table border="1">
+    <tr id="row1">
+        <th class="header">Row 1, Col 1</th>
+        <th class="header">Row 1, Col 2</th>
+        <th class="header">Row 1, Col 3</th>
+        <th class="header">Row 1, Col 4</th>
+        <th class="header col5">Row 1, Col 5</th>
+    </tr>
+    <tr id="row2">
+        <td colspan="2">colspan</td>
+        <td>Row 2, Col 3</td>
+        <td>Row 2, Col 4</td>
+        <td class="col5">Row 2, Col 5</td>
+    </tr>
+    <tr id="row3">
+        <td rowspan="2">rowspan</td>
+        <td>Row 3, Col 2</td>
+        <td>Row 3, Col 3</td>
+        <td>Row 3, Col 4</td>
+        <td class="col5">Row 3, Col 5</td>
+    </tr>
+    <tr id="row4">
+        <td>Row 4, Col 2</td>
+        <td>Row 4, Col 3</td>
+        <td>Row 4, Col 4</td>
+        <td class="col5">Row 4, Col 5</td>
+    </tr>
+    <tr id="row5">
+        <td>Row 5, Col 1</td>
+        <td>Row 5, Col 2</td>
+        <td>Row 5, Col 3</td>
+        <td>Row 5, Col 4</td>
+        <td class="col5">Row 5, Col 5</td>
+    </tr>
+</table>
+</body>
+
+</html>

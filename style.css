@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    background-image: url(images/background.jpeg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+table {
+    background-color: rgba(255, 255, 255, .7);
+    color: #5a66c4;
+}
+
+h1,
+h2 {
+    color: yellowgreen;
+}
+
+p {
+    color: #3a88fe;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    color: #ad3e00;
+    background-color: #ffc800;
+}
+li{
+    color: goldenrod;
+}
+ul{
+    color: #669c35;
+}
+ol{
+    color: limegreen;
+}
+#row4{
+    color: #a8c6fe;
+}
+.col5{
+    color: #0056d6;
+}
+#row2{
+    background-color: #ff40ff;
+}
+#tag{
+    color: #ffffff;
+    background-color:midnightblue
+}
