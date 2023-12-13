@@ -15,8 +15,9 @@ table {
 }
 
 h1,
-h2 {
-    color: yellowgreen;
+h2,
+h3{
+    color: #9fdc23;
 }
 
 p {
@@ -30,10 +31,10 @@ nav {
     background-color: #ffc800;
 }
 li{
-    color: goldenrod;
+    color: #af8d3c;
 }
 ul{
-    color: #669c35;
+    color: #74d024;
 }
 ol{
     color: limegreen;
@@ -50,4 +51,7 @@ ol{
 #tag{
     color: #ffffff;
     background-color:midnightblue
+}
+a{
+    color: turquoise;
 }
