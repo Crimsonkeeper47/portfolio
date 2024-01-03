@@ -10,7 +10,7 @@ html {
 }
 
 table {
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgb(255, 255, 255);
     color: #5a66c4;
 }
 
@@ -40,13 +40,13 @@ ol{
     color: limegreen;
 }
 #row4{
-    color: #a8c6fe;
+    color: #349973;
 }
 .col5{
-    color: #0056d6;
+    color: #86da20;
 }
 #row2{
-    background-color: #ff40ff;
+    background-color:rgba(243,255,97,.7);
 }
 #tag{
     color: #ffffff;
